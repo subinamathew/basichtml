@@ -1,0 +1,9 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: echo 'init script ' # runs during prebuild
+    command: python -m http.server 8080 # press ctrl + c to stop
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 8080
+    onOpen: open-browser
